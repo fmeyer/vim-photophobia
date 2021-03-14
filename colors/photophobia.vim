@@ -89,7 +89,8 @@ hi!  Comment       term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  
 hi!  Constant      term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  guifg=NONE  guibg=NONE
 hi!  Special       term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  guifg=NONE  guibg=NONE
 hi!  Identifier    term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  guifg=NONE  guibg=NONE
-hi!  Statement     term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  guifg=NONE  guibg=NONE
+hi!  Keyword       term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=bold  guifg=NONE  guibg=NONE
+hi!  Statement     term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=bold  guifg=NONE  guibg=NONE
 hi!  PreProc       term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  guifg=NONE  guibg=NONE
 hi!  Type          term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  guifg=NONE  guibg=NONE
 hi!  Underlined    term=NONE  cterm=NONE  ctermfg=NONE  ctermbg=NONE  gui=NONE  guifg=NONE  guibg=NONE
@@ -219,8 +220,37 @@ exe "hi! Ignore"      ." cterm=bold"       ." gui=bold"
 exe "hi! todo"        ." cterm=bold"       ." gui=bold"
 exe "hi! MatchParen"  ." cterm=bold"       ." gui=bold"
 
+exe "hi! String"      ." guifg=#549fff"     ." gui=italic"
+exe "hi! Number"      ." guifg=#549fff"     ." gui=italic"
+
 exe "hi! helpHyperTextJump"  ." cterm=bold"  ." gui=bold"
 exe "hi! helpHyperTextEntry"  ." cterm=bold"  ." gui=bold"
 
 
 " }}}
+
+
+" hi String cterm=NONE ctermfg=21 ctermbg=16 gui=NONE guifg=#549fff guibg=#ffffec
+" hi Number cterm=NONE ctermfg=21 ctermbg=16 gui=NONE guifg=#549fff guibg=#ffffec
+
+" hi Error cterm=NONE ctermfg=255 ctermbg=18 gui=NONE guifg=#eeeeee guibg=#33669d
+" hi ErrorMsg cterm=NONE ctermfg=255 ctermbg=18 gui=NONE guifg=#eeeeee guibg=#33669d
+" hi Comment cterm=NONE ctermfg=18 ctermbg=16 gui=NONE guifg=#33669d guibg=#ffffec
+" hi DiffChange cterm=NONE ctermfg=18 ctermbg=255 gui=NONE guifg=#33669d guibg=#eeeeee
+" hi DiffText cterm=bold ctermfg=255 ctermbg=21 gui=bold guifg=#eeeeee guibg=#549fff
+" hi SignColumn cterm=NONE ctermfg=21 ctermbg=240 gui=NONE guifg=#549fff guibg=#585858
+" hi SpellBad cterm=undercurl ctermfg=255 ctermbg=18 gui=undercurl guifg=#eeeeee guibg=#33669d
+" hi SpellRare cterm=NONE ctermfg=21 ctermbg=18 gui=NONE guifg=#549fff guibg=#33669d
+" hi SpellCap cterm=NONE ctermfg=255 ctermbg=18 gui=NONE guifg=#eeeeee guibg=#33669d
+" hi Normal cterm=NONE ctermfg=250 ctermbg=16 gui=NONE guifg=#bcbcbc guibg=#000000
+" hi Keyword cterm=NONE ctermfg=255 ctermbg=16 gui=NONE guifg=#eeeeee guibg=#000000
+" hi Constant cterm=NONE ctermfg=252 ctermbg=16 gui=NONE guifg=#d0d0d0 guibg=#000000
+" hi Search cterm=NONE ctermfg=245 ctermbg=236 gui=NONE guifg=#8a8a8a guibg=#303030
+" hi IncSearch cterm=reverse ctermfg=255 ctermbg=245 gui=reverse guifg=#eeeeee guibg=#8a8a8a
+" hi WildMenu cterm=NONE ctermfg=240 ctermbg=255 gui=NONE guifg=#585858 guibg=#eeeeee
+" hi Pmenu cterm=NONE ctermfg=255 ctermbg=240 gui=NONE guifg=#eeeeee guibg=#585858
+" hi PmenuThumb cterm=NONE ctermfg=232 ctermbg=240 gui=NONE guifg=#080808 guibg=#585858
+" hi SpecialKey cterm=NONE ctermfg=16 ctermbg=255 gui=NONE guifg=#000000 guibg=#eeeeee
+" hi MatchParen cterm=NONE ctermfg=16 ctermbg=240 gui=NONE guifg=#000000 guibg=#585858
+" hi Visual cterm=reverse ctermfg=250 ctermbg=16 gui=reverse guifg=#bcbcbc guibg=#000000
+" hi TermCursor cterm=reverse ctermfg=NONE ctermbg=NONE gui=reverse guifg=NONE guibg=NONE
